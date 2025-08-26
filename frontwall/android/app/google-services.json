@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1053005156778",
+    "project_id": "frontwall-923e4",
+    "storage_bucket": "frontwall-923e4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053005156778:android:c4b121d4c7ca7737359bd3",
+        "android_client_info": {
+          "package_name": "com.example.frontwall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053005156778-p685sukg99o0j7jj73i30qu1unsvu94f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.frontwall",
+            "certificate_hash": "32ff67c0f5fee87256114b53ce5fd142829b73d2"
+          }
+        },
+        {
+          "client_id": "1053005156778-qhvt6qbkbu3id57lo23a1tkcia1d010k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2HsePSCyY1L_sUfM64MxpapCyFw1o-cw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053005156778-qhvt6qbkbu3id57lo23a1tkcia1d010k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1053005156778-u1j4c3bf8b6jb3dpim8u7sqot6r8in53.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.frontwall"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

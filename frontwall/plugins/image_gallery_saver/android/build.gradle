@@ -1,0 +1,58 @@
+// ~/.pub-cache/hosted/pub.dev/image_gallery_saver-1.7.1/android/build.gradle
+
+group 'com.example.imagegallerysaver'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    // 1) Usamos Kotlin ≥ 1.5.20 (aquí 1.6.10)
+    ext.kotlin_version = '1.6.10'
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        // 2) Android Gradle Plugin correspondiente a tu Flutter (aquí 7.0.2)
+        classpath 'com.android.tools.build:gradle:7.0.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+// Aplica a todos los subproyectos
+rootProject.allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    // 3) Declaramos un namespace para AGP 7+
+    namespace 'com.example.imagegallerysaver'
+
+    compileSdkVersion 31
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+    defaultConfig {
+        minSdkVersion 16
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
